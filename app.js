@@ -156,10 +156,32 @@ Get a perfect match with True Match Super- Blendable Oil Free Makeup Powder.This
 
 
 }
+var productMenu = document.getElementById("productMenu");
+var allProducts = document.getElementById("allProducts");
 for (product in foreverProducts) {
-    // console.log(product);
-    for (brand in foreverProducts[product]) {
-        console.log(foreverProdcts[product]);
-        // var allProducts = document.getElementById("allProducts")
-    }
+//   console.log(product);
+//   productMenu.innerHTML += `
+//             <option value="${product}">${product.toUpperCase()}</option>
+
+//     `;
+  for (brand in foreverProducts[product]) {
+   
+    productMenu.innerHTML += `
+ <div class="col">
+          <div class="card">
+            <img
+              src=${foreverProducts[product][brand].src}
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">${foreverProducts[product][brand].name}</h5>
+              <p class="card-text">${foreverProducts[product][brand].description}</p>
+            </div>
+            <div class="card-footer">
+              <h5 class="price">${foreverProducts[product][brand].price}/- </h5>
+            </div>
+          </div>
+        </div>`;
+  }
 }
