@@ -50,21 +50,116 @@ var foreverProducts = {
                 description: `A pressed powder that provides buildable coverage while minimizing pores and fine lines. This powder foundation is non-cakey, oil-free and non-comedogenic.
 Get a perfect match with True Match Super- Blendable Oil Free Makeup Powder.This micro- fine pressed powder provides buildable, long- lasting coverage.Choose your True Match shade to find one that best complements your skin tone and undertone." ,
            `},
-        'serum': {
-             img: "https://www.lorealparisusa.com/-/media/project/lor…idnight-serum/atf-v2-2024/071249630167_t1-new.png",
-                 price: "$43.99",
-             description: "A lightweight facial serum that’s setting a new standard for luxury serums. The formula is non-greasy, non-sticky, paraben-free, mineral oil-free, allergy tested, suitable for sensitive skin and won’t clog pores." ,
-        }
+            'serum': {
+                img: "https://www.lorealparisusa.com/-/media/project/lor…idnight-serum/atf-v2-2024/071249630167_t1-new.png",
+                price: "$43.99",
+                description: "A lightweight facial serum that’s setting a new standard for luxury serums. The formula is non-greasy, non-sticky, paraben-free, mineral oil-free, allergy tested, suitable for sensitive skin and won’t clog pores.",
+            },
+            NordStrom: {
+                'cleansers': {
+                    img: "https://n.nordstrommedia.com/it/99f6a9ea-279a-451e-a3b8-3c46bc0b1cde.jpeg?h=368&w=240&dpr=2",
+                    price: "$34",
+                    description: "This rich and creamy cleanser with nourishing rosehip oil and soothing Rose de France delivers a voluminous foam to gently remove makeup (even waterproof), dissolve impurities and leave the skin soft and supple.",
+                },
+                'moisturizing cream': {
+                    img: "https://n.nordstrommedia.com/it/aaa16fd1-0a3c-40d9-b7a7-bcf0f60f938c.jpeg?crop=pad&w=1950&h=2990",
+                    price: "$100.00 ",
+                    description: "Powered by visible youth-regenerating Miracle Broth™, this iconic moisturizer begins to activate repair immediately. In hours, skin feels firmer, looks smoother and more radiant*."
+                },
+                'serum': {
+                    img: "https://n.nordstrommedia.com/it/f16df3d7-eac2-435a-8005-176f1ed2e85b.jpeg?crop=pad&w=780&h=1196",
+                    price: "$99.00",
+                    description: " This serum utilizes bio-technology, lactic acid and an ultra-stable vitamin C complex, which work together to fight the appearance of skin aging before it starts. The optimized delivery system—peptide and AHA—exfoliates and reduces unbalanced pigmentation."
+                }
+            },
+        },
+    },
+    haircare: {
+        sephora: {
+            'shampoo': {
+                img: "https://www.sephora.com/productimages/sku/s2319820-main-zoom.jpg?imwidth=612",
+                price: "$34.00",
+                description: "Detox Clarifying Shampoo with Apple Cider Vinegar"
+            },
+            'conditioner': {
+                img: "https://www.sephora.com/productimages/sku/s2390821-main-zoom.jpg?imwidth=315",
+                price: "$37.00",
+                description: "Hydrate Sheer Conditioner for Fine Hair",
+            },
+            'scalp scrub': {
+                img: "https://www.sephora.com/productimages/sku/s2815132-main-zoom.jpg?imwidth=315",
+                price: "$40.00",
+                description: "A clarifying shampoo that revitalizes scalp lacking in tone with gentle, natural surfactants and scrub particles, leaving scalp and hair purified and healthy.",
+            }
+        },
+        tresemme: {
+            'shampoo': {
+                img: "https://assets.unileversolutions.com/v1/132852805.png?im=AspectCrop=(400,400);Resize=(400,400)",
+                price: "$6.98",
+                description: "Our Keratin Smooth Blowout Heat Protect Spray is designed to perfect your iconic blowout while protecting against heat up to 450° F."
+            },
+            'conditioner': {
+                img: "https://assets.unileversolutions.com/v1/133276357.png?im=AspectCrop=(400,400);Resize=(400,400)",
+                price: "$12.45",
+                description: "This deep conditioning hair treatment, made with a unique Volume Control Complex and Silk proteins, helps keep your hair from falling flat and makes it more manageable without weighing it down"
+            },
+            'hair mousse': {
+                img: "https://assets.unileversolutions.com/v1/132563504.png?im=AspectCrop=(400,400);Resize=(400,400)",
+                price: "$13.45",
+                description: " With up to 72H frizz defense, this product ensures your hair remains sleek and manageable all day long, no matter the weather conditions."
+            }
+        },
+        seen: {
+            'hydrating shampoo': {
+                img: "https://helloseen.com/cdn/shop/files/0034_Shampoo_FragranceFree_Front-_REG_720x.webp?v=1746082555",
+                price: "$ 29.75",
+                description: "Provides a luxurious lather and helps promote stronger, smoother, healthier-looking hair."
+            },
+            'magic serum': {
+                img: "https://helloseen.com/cdn/shop/files/0063_MagicSerum_Front_720x.webp?v=1746080061",
+                price: "$ 37.20",
+                description: "Reduces frizz, adds shine, nourishes and provides hair with protection against heat up to 450º F.",
+            },
+            'body wash': {
+                img: "https://helloseen.com/cdn/shop/files/0049_BodyWash…eea-497c-86d4-55089a72b37f_720x.webp?v=1746084345",
+                price: "$ 24.8",
+                description: "This gentle yet effective award-winning formula leaves skin feeling fresh and balanced without clogging pores or irritating skin."
+            }
+
+        },
+        dove: {
+            'shampoo': {
+                img: "	https://assets.unileversolutions.com/v1/130260752.png?im=AspectCrop=(520,520);Resize=(520,520)",
+                price: "$1.31",
+                description: "For manageable and silky hair that feels beautifully soft, this Dove shampoo helps protect hair from daily wear and tear."
+            },
+            'conditioner':{
+                img: "https://assets.unileversolutions.com/v1/130260715.png?im=AspectCrop=(520,520);Resize=(520,520)",
+                price: "$ 2.96",
+                description: "Dove Daily Moisture Light Conditioner, made with Oxyfusion ingredients.",
+            },
+            'hair treatment':{
+                img: "https://assets.unileversolutions.com/v1/113805421.png?im=AspectCrop=(520,520);Resize=(520,520)",
+                price: "$ 2.59",
+                description: "Transform your everyday hair wash into a moment of intensive damaged hair repair with Dove 1 Minute Super Conditioner. ",
+            },
+        },
 
 
     },
+    babycare: {
 
-},
+    },
+    fragrance: {
+
+    },
+
+
 }
-for(product in foreverProducts){
+for (product in foreverProducts) {
     // console.log(product);
-    for(brand in foreverProducts[product]){
-        console.log(foreverProducts[product][brand.Bathnbody]);
+    for (brand in foreverProducts[product]) {
+        console.log(foreverProdcts[product]);
         // var allProducts = document.getElementById("allProducts")
     }
 }
