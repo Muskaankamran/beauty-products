@@ -1,0 +1,13 @@
+body {
+            background: #f8f9fa;
+            padding: 30px;
+        }
+        .card img {
+            height: 220px;
+            object-fit: contain;
+            background:#fff;
+        }
+        .price {
+            font-weight: bold;
+            color: #e63e6d;
+        }
