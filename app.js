@@ -4,74 +4,56 @@ var foreverProducts = {
             "Lotion": {
                 img: "https://bdy.treehutshea.com/cdn/shop/files/BDY148.jpg?v=1745510707&width=1000",
                 price: "$17.99",
-                description: "bdy. Restoring Weightless Body Lotion with Glycerin + Hyaluronic Acid absorbs quickly to help lock in moisture for glowing skin without a greasy feel."
+                description: "Restoring Weightless Body Lotion."
             },
             "Facial serums": {
                 img: "https://bdy.treehutshea.com/cdn/shop/files/BDY146.jpg?v=1745510547&width=1000",
                 price: "$21.99",
-                description: "bdy. Mini Brightening Dual Phase Body Serum Mist with Niacinamide + Squalane is a silky, non-greasy serum mist, perfect for on-the-go dewy skin."
+                description: "Brightening Dual Phase Body Serum Mist."
             },
             "oil body wash": {
                 img: "https://bdy.treehutshea.com/cdn/shop/files/BDY138.jpg?v=1745510678&width=1000",
                 price: "$20.00",
-                description: "bdy. Foaming Oil Hydrating Body Wash with Hyaluronic Acid + Squalane is a velvety oil-to-foam cleanser that helps hydrate, balance and soothe skin."
+                description: "Foaming Oil Hydrating Body Wash."
+            }
+        },
+        Sephora: {
+            "lotion": {
+                img: "https://www.sephora.com/productimages/sku/s2767168-main-zoom.jpg?imwidth=315",
+                price: "$33.44",
+                description: "Healing lotion boosts skin barrier with a fast-absorbing formula that's lightweight and leaves no greasy residue; provides 24-hour hydration",
             },
-
-            Bathnbody: {
-                "body wash": {
-                    img: "https://www.bathandbodyworks.com/...correct-url-here.jpg",
-                    price: "$16.95",
-                    description: "Warm your heart a thousand times over..."
-                },
-                "Face wash": {
-                    img: "https://www.bathandbodyworks.com/...correct-url-here.jpg",
-                    price: "$13.95",
-                    description: "What it smells like: a breath of fresh, clean and calming air."
-                },
-                "Hand soap": {
-                    img: "https://www.bathandbodyworks.com/...correct-url-here.jpg",
-                    price: "$8.95",
-                    description: "Savor the softness of lush florals..."
-                }
+            "facial essence": {
+                img: "https://www.sephora.com/productimages/sku/s2898419-main-zoom.jpg?imwidth=612",
+                price: "$32.00",
+                description: "This fragrance free moisturizer is specially formulated for sensitive skin with a lightweight formula that absorbs quickly",
             },
-
-            lorealparis: {
-                "sunscreen": {
-                    img: "https://www.lorealparisusa.com/-/media/project/lor…care_rvl_tp_day_48g__primary_071249696057_av1.png",
-                    price: "$29.99",
-                    description: "Formulated with 3 of the top dermatologist-proven ingredients - Pro-Retinol, Hyaluronic Acid, and Vitamin C"
-                },
-                "moisturaizer": {
-                    img: "https://www.lorealparisusa.com/-/media/project/lor…-filler-moisture-bounce-serum/071249699638-t1.png",
-                    price: "$12.99",
-                    description: "Use this fast-absorbing serum alone or under makeup for a healthy, hydrated glow"
-                },
-                "night cream": {
-                    img: "https://www.lorealparisusa.com/-/media/project/lor…one-collagen-expert-night-moisturizer-primary.png",
-                    price: "$43.99",
-                    description: `Age Perfect Collagen Expert Night Moisturizer is an intensely hydrating night cream for face, made with powerful Collagen Peptides + Niacinamide to help retighten, rehydrate and firm maturing skin."
-                `},
+            "face serum": {
+                img: "https://www.sephora.com/productimages/sku/s2031391-main-zoom.jpg?imwidth=315",
+                price: "$6.00",
+                description: "A water-based serum that helps to enhance skin brightness, improve texture, reduce excess oil, and strengthen the skin’s moisture barrier.",
             },
-  
-            NordStrom: {
-                "cleansers": {
-                    img: "https://n.nordstrommedia.com/it/e3cd70db-a775-4649-aeae-c031905a5146.jpeg?crop=pad&w=1950&h=2990",
-                    price: "$34.00",
-                    description: "Transforming from a velvety cleansing cream into a finely-textured lather, it treats skin to a luxurious sensory experience. With continued use, this cleanser helps skin look and feel deeply cleansed, thoroughly moisturized, soft and smooth."
-                },
-                "moisturizing cream": {
-                    img: "https://n.nordstrommedia.com/it/71507e01-61ce-4bb2-a6cb-4f8a8a18df74.jpeg?crop=pad&w=780&h=1196" ,
-                    price: "$100.00",
-                    description: "An silky-soft moisturizer that delivers all-day healing moisture and profound rejuvenation for visibly plumper, healthier, firmer, lifted-looking skin."
-              },
-                "serum": {
-                    img: "https://n.nordstrommedia.com/it/eec04cbb-d19f-4a11-a718-32a3fe711438.jpeg?crop=pad&w=780&h=1196",
-                    price: "$99.00",
-                    description: " A powerful dark spot–fighting serum with that immediately boosts radiance and hydrates for 48 hours."
-                }
+        },
+        anfisaskin: {
+            "serum": {
+                img: "https://anfisaskin.com/cdn/shop/files/Large_Serum.webp?v=1722410068&width=900",
+                price: "$196.00",
+                description: "Meet ÂN-DEW: an award-winning, comprehensive skin-brightening serum designed to enhance, clarify, and gently exfoliate the skin.",
+            },
+            "lip treatment": {
+                img: "	https://anfisaskin.com/cdn/shop/files/Anfisa-An-Gl…493c-bdf2-0ce8425349bc.jpg?v=1756912074&width=900"
+                ,
+                price: "$45.00",
+                description: "Meet ÂN-GLOSS: The award-winning formula, in a universal sheer lip treatment.",
+            },
+            "hydra balm": {
+                img: "https://anfisaskin.com/cdn/shop/files/ANFISASKIN_An-Balm-50ml.webp?v=1710256232&width=900",
+                price: "$150.00",
+                description: "Meet ÂN-BALM: A concentrated, waxless balm that reimagines facial oils. Its unique balm-to-oil formula delivers profound hydration, balancing your skin's natural oils and calming your complexion for a radiant glow. ",
             }
         }
     },
+
 
     haircare: {
         sephora: {
@@ -152,7 +134,6 @@ var foreverProducts = {
 };
 
 var productMenu = document.getElementById("productMenu");
-var allProducts = document.getElementById("allProducts");
 
 for (let category in foreverProducts) {
     for (let brand in foreverProducts[category]) {
@@ -161,23 +142,19 @@ for (let category in foreverProducts) {
             let product = foreverProducts[category][brand][item];
 
             productMenu.innerHTML += `
-                        <div class= "col">
-                            <div class="card">
-                                <img
-                                    src="${product.img}"
-                                    class="card-img-top"
-                                    alt="${item}"
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">${item}</h5>
-                                    <p class="card-text">${product.description}</p>
-                                </div>
-                                <div class="card-footer">
-                                    <h5 class="price">${product.price}</h5>
-                                </div>
-                            </div>
-        </div >
-    `;
+                <div class="col">
+                    <div class="card">
+                        <img src="${product.img}" class="card-img-top" alt="${item}">
+                        <div class="card-body">
+                            <h5 class="card-title">${item}</h5>
+                            <p class="card-text">${product.description}</p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">${product.price}</h5>
+                        </div>
+                    </div>
+                </div>
+            `;
         }
     }
 }
