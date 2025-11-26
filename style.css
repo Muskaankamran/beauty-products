@@ -1,5 +1,10 @@
-body {
-            background: #f8f9fa;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+     body {
+            background: rgb(255, 251, 251);
             padding: 30px;
         }
         .card img {
@@ -11,3 +16,22 @@ body {
             font-weight: bold;
             color: #e63e6d;
         }
+        .navbar {
+  background-color: #f48fb1;
+}
+.navbar-brand {
+  color: #fce4ec;
+  font-weight: bold;
+  font-size: 42px;
+  font-family: "Monsieur La Doulaise", cursive;
+}
+.navbar-brand:hover{
+  color: #fce4ec;
+  transform: scale(1.1);
+  transition: 1s;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+        

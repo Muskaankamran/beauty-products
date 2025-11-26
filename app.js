@@ -41,15 +41,14 @@ var foreverProducts = {
                 description: "Meet ÂN-DEW: an award-winning, comprehensive skin-brightening serum designed to enhance, clarify, and gently exfoliate the skin.",
             },
             "lip treatment": {
-                img: "	https://anfisaskin.com/cdn/shop/files/Anfisa-An-Gl…493c-bdf2-0ce8425349bc.jpg?v=1756912074&width=900"
-                ,
+                img: "https://anfisaskin.com/cdn/shop/files/Anfisa-An-Gloss-Spice-Cake_64f91976-2037-437b-8c29-02ef9014d45f.jpg?v=1756911820&width=1728",
                 price: "$45.00",
                 description: "Meet ÂN-GLOSS: The award-winning formula, in a universal sheer lip treatment.",
             },
             "hydra balm": {
                 img: "https://anfisaskin.com/cdn/shop/files/ANFISASKIN_An-Balm-50ml.webp?v=1710256232&width=900",
                 price: "$150.00",
-                description: "Meet ÂN-BALM: A concentrated, waxless balm that reimagines facial oils. Its unique balm-to-oil formula delivers profound hydration, balancing your skin's natural oils and calming your complexion for a radiant glow. ",
+                description: " It is a unique balm-to-oil formula delivers profound hydration, balancing your skin's natural oils and calming your complexion for a radiant glow. ",
             }
         }
     },
@@ -125,36 +124,164 @@ var foreverProducts = {
                 img: "https://assets.unileversolutions.com/v1/113805421.png",
                 price: "$2.59",
                 description: "1 Minute Super Conditioner for damaged hair."
-            }
-        }
+            },
+        },
     },
 
-    babycare: {},
+    babycare: {
+        jhonsons: {
+            "baby shampoo": {
+                img: "./images/baby shampoo jhonsons.webp",
+                price: "$11.77",
+                description: "JOHNSON'S® Baby Shampoo is as gentle to the eyes as pure water and is specially designed to gently cleanse baby’s delicate hair and scalp. It quickly lathers and rinses easily, leaving your baby’s hair soft, shiny, and clean.",
+            },
+            "baby oil": {
+                img: "./images/johnson-s-baby-oil-500ml_1.webp",
+                price: "$16.51",
+                description: "Use JOHNSON'S® baby oil during a baby massage for a bonding experience that is relaxing for both you and your little one skin soft and smooth ​​",
+            },
+            "bubble bath": {
+                img: "./images/johnson-baby-bedtime.jpg ",
+                price: "$11.71 ",
+                description: "JOHNSON'S® Bedtime® Bubble Bath makes bath time more fun and enjoyable, and can be used in the evening as part of JOHNSONS® clinically proven Bedtime® routine of warm bath, gentle massage, and quiet time to help your child get a peaceful night's sleep*.",
+            },
+            "baby lotion": {
+                img: "./images/johnsons-baby-soft-lotion-300ml-685889.webp",
+                price: "$14.30",
+                description: "JOHNSON'S® Baby Lotion with coconut oil nourishes and protects your baby's skin from dryness. It is made with skin-nurturing glycerin that draws and locks in moisture and supports healthy skin development. Gently moisturizes baby's delicate skin. ",
+            },
+            "baby powder": {
+                img: "./images/powder.jpeg ",
+                price: "$14.30 ",
+                description: "Our baby powder keeps skin comfortable, dry & feeling soft. With a clean, classic scent, this baby powder formula glides over your baby’s skin and leaves it feeling delicately soft and dry while providing soothing comfort.  ",
+            },
+        },
+        ' baby ghanics': {
+            "sunscreen": {
+                img: "./images/baby ghanics-sunscreen.jpg ",
+                price: "$12.55  ",
+                description: "It’s a big, wide world out there and your baby wants at it. Our all-mineral active ingredient formula provides broad spectrum UVA/UVB protection and glides on smooth for easy application. ",
+            },
+            " baby gel": {
+                img: "./images/gel cream.jpg ",
+                price: "$12.41",
+                description: "Our After Sun Gel Cream protects and hydrates skin for every pre-and-post sunny activity. Because keeping baby’s skin baby soft is serious business. Perfect for sunny days, windy days, and any other kind of day. ",
+            },
+
+        },
+    },
     fragrance: {}
 };
 
-var productMenu = document.getElementById("productMenu");
 
+
+// -------------------- DOM ELEMENTS --------------------
+var categoryMenu = document.getElementById("categoryMenu");
+var brandMenu = document.getElementById("brandMenu");
+var itemMenu = document.getElementById("itemMenu");
+var productsGrid = document.getElementById("productsGrid");
+
+// -------------------- LOAD CATEGORIES --------------------
 for (let category in foreverProducts) {
-    for (let brand in foreverProducts[category]) {
-        for (let item in foreverProducts[category][brand]) {
+    categoryMenu.innerHTML += `<option value="${category}">${category.toUpperCase()}</option>`;
+}
 
-            let product = foreverProducts[category][brand][item];
+// -------------------- SHOW ALL PRODUCTS --------------------
+function showAllProducts() {
+    productsGrid.innerHTML = "";
 
-            productMenu.innerHTML += `
-                <div class="col">
-                    <div class="card">
-                        <img src="${product.img}" class="card-img-top" alt="${item}">
-                        <div class="card-body">
-                            <h5 class="card-title">${item}</h5>
-                            <p class="card-text">${product.description}</p>
-                        </div>
-                        <div class="card-footer">
-                            <h5 class="price">${product.price}</h5>
+    for (let category in foreverProducts) {
+        for (let brand in foreverProducts[category]) {
+            for (let item in foreverProducts[category][brand]) {
+
+                let product = foreverProducts[category][brand][item];
+
+                productsGrid.innerHTML += `
+                    <div class="col">
+                        <div class="card">
+                            <img src="${product.img}" class="card-img-top" alt="${item}">
+                            <div class="card-body">
+                                <h5 class="card-title">${item}</h5>
+                                <p class="card-text">${product.description}</p>
+                                <p><strong>Brand:</strong> ${brand}</p>
+                                <p><strong>Category:</strong> ${category}</p>
+                            </div>
+                            <div class="card-footer">
+                                <h5 class="price">${product.price}</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
+                `;
+            }
         }
     }
+
+    // Reset dropdowns
+    categoryMenu.value = "Select Category";
+    brandMenu.innerHTML = `<option selected>Select Brand</option>`;
+    itemMenu.innerHTML = `<option selected>Select Product</option>`;
+}
+
+// -------------------- LOAD ALL PRODUCTS ON PAGE LOAD --------------------
+window.onload = showAllProducts;
+
+// -------------------- WHEN CATEGORY CHANGES --------------------
+function changeCategory() {
+    brandMenu.innerHTML = `<option selected>Select Brand</option>`;
+    itemMenu.innerHTML = `<option selected>Select Product</option>`;
+    productsGrid.innerHTML = "";
+
+    let category = categoryMenu.value;
+
+    for (let brand in foreverProducts[category]) {
+        brandMenu.innerHTML += `<option value="${brand}">${brand.toUpperCase()}</option>`;
+    }
+}
+
+// -------------------- WHEN BRAND CHANGES --------------------
+function changeBrand() {
+    itemMenu.innerHTML = `<option selected>Select Product</option>`;
+    productsGrid.innerHTML = "";
+
+    let category = categoryMenu.value;
+    let brand = brandMenu.value;
+
+    for (let item in foreverProducts[category][brand]) {
+        itemMenu.innerHTML += `<option value="${item}">${item.toUpperCase()}</option>`;
+    }
+}
+
+// -------------------- FILTER & SHOW SELECTED PRODUCT --------------------
+function filterProduct() {
+    productsGrid.innerHTML = "";
+
+    let category = categoryMenu.value;
+    let brand = brandMenu.value;
+    let item = itemMenu.value;
+
+    if (!category || !brand || !item) return;
+
+    let product = foreverProducts[category][brand][item];
+
+    productsGrid.innerHTML = `
+        <div class="col">
+            <div class="card">
+                <img src="${product.img}" class="card-img-top" alt="${item}">
+                <div class="card-body">
+                    <h5 class="card-title">${item}</h5>
+                    <p class="card-text">${product.description}</p>
+                </div>
+                <div class="card-footer">
+                    <h5 class="price">${product.price}</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW ALL BUTTON -->
+        <div class="col-12 text-center mt-4">
+            <button onclick="showAllProducts()" class="btn btn-outline-primary">
+                View All Products
+            </button>
+        </div>
+    `;
 }
